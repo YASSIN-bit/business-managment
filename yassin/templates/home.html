@@ -1,0 +1,19 @@
+<h1> NKORI BUSINESS COMPANY </h1>
+<br/>
+<h2>PRODUCTS</h2>
+<ul>
+    {% for product in products %}
+        <li> {{ product.name}} ({{product.price}} FBU)</li>
+    {% endfor %}
+</ul>
+<br/>
+
+<ul>
+    {%for identity in identities %}
+        <li> 
+            {{identity.first_name}}
+            {{identity.last_name}}
+            {{identity.age}}
+        </li>
+    {% endfor %}
+</ul>
